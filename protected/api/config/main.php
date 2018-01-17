@@ -71,6 +71,12 @@ return [
         'errorHandler' => [
  //           'errorAction' => 'site/error',	// action handler
         ],
+
+        'request' => [
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+                         ]
+                    ],
         
 		'urlManager' => [
             'enablePrettyUrl' => true,

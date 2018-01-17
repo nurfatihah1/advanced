@@ -2,8 +2,13 @@
 
 namespace api\modules\v1\controllers;
 
+use Yii;
 use yii\rest\ActiveController;
-
+use app\protected\api\v1\models\Country;
+use app\protected\api\v1\models\CountrySearch;
+use yii\web\Controller;
+use yii\web\NotFoundHttpException;
+use yii\filters\VerbFilter;
 /**
  * Country Controller API
  *
